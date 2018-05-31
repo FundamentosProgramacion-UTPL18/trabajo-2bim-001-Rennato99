@@ -11,19 +11,21 @@ public class EJERCICIO03 {
         
         double [] calificaciones_progr = {18, 19, 15, 16, 17, 10};
         double [] calificaciones_bd = {10, 12, 13, 20, 17, 20};
-        double [] promedios = new double[6];
-        double suma = 0, promedio;
+        double [] promedios = new double[6]; 
+        double suma = 0, promedio; 
         
+        // For para el calculo del promedio
         for (int contador = 0; contador< calificaciones_bd.length; contador ++) {
             suma = calificaciones_progr[contador] + calificaciones_bd[contador];
             promedio = suma/2;
             promedios[contador] = promedio;
         } // Fin for
-        System.out.println("  ESTUDIANTE \tPROGRAMACION\tBASE DE DATOS\tPROMEDIO");
+        
+        System.out.println("  ESTUDIANTE \tPROGRAMACION\tBASE DE DATOS\tPROMEDIO"); // Encabeezado
+        
+        // For para la presentación de los datos
         for (int contador = 0; contador< calificaciones_bd.length; contador ++) {
             System.out.printf("Estudiante %d:\t%.2f\t\t%.2f\t\t%.2f\n", contador+1, calificaciones_progr[contador], calificaciones_bd[contador], promedios[contador]);
-            
-            
         } // Fin for
     }
 }
