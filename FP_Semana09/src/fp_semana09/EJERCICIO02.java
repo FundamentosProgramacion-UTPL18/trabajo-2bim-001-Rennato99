@@ -17,9 +17,14 @@ public class EJERCICIO02 {
         // Para cada valor de mi arreglo PAR
         for (int contador=0; contador < arreglo.length; contador ++) {
             if (arreglo[contador] % 2 == 0){
-                resultado = arreglo[contador] * multiplicador;
-                System.out.printf("\t%d x %d = %d\n", arreglo[contador], multiplicador, resultado);
-                multiplicador = multiplicador + 1;
+                multiplicador = 1;
+                System.out.printf("\nTABLA DEL %d\n", arreglo[contador]); 
+                while (multiplicador <= 12) {
+                    resultado = arreglo[contador] * multiplicador;
+                    System.out.printf("\t%d x %d = %d\n", arreglo[contador], multiplicador, resultado);
+                    multiplicador = multiplicador + 1;
+                }
+                
             }
         }
     }
