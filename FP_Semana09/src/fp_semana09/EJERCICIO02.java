@@ -23,9 +23,9 @@ public class EJERCICIO02 {
                     resultado = arreglo[contador] * multiplicador;
                     System.out.printf("\t%d x %d = %d\n", arreglo[contador], multiplicador, resultado);
                     multiplicador = multiplicador + 1;
-                }
-                
-            }
-        }
-    }
+                } // Fin while             
+            } // Fin if
+        } // Fin for
+        
+    } 
 }
